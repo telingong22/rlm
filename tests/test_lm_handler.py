@@ -1,8 +1,8 @@
 """Tests for LMHandler using MockLM (no real LM required)."""
 
-from tests.mock_lm import MockLM
 from rlm.core.comms_utils import LMRequest, send_lm_request, send_lm_request_batched
 from rlm.core.lm_handler import LMHandler
+from tests.mock_lm import MockLM
 
 
 def test_lm_handler_single_request():

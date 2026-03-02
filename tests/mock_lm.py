@@ -1,6 +1,7 @@
 """Mock LM for testing without a real model."""
 
-from typing import Any, Callable
+from collections.abc import Callable
+from typing import Any
 
 from rlm.clients.base_lm import BaseLM
 from rlm.core.types import ModelUsageSummary, UsageSummary
