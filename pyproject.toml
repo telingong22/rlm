@@ -71,7 +71,8 @@ testpaths = ["tests"]
 python_files = ["test_*.py"]
 python_classes = ["Test*"]
 python_functions = ["test_*"]
-addopts = "--cov=src/rlm --cov-report=term-missing"
+# removed --cov flags so a plain `pytest` run doesn't require pytest-cov
+addopts = "-v"
 
 [tool.mypy]
 python_version = "3.9"
