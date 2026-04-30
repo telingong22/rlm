@@ -73,7 +73,8 @@ python_classes = ["Test*"]
 python_functions = ["test_*"]
 # removed --cov flags so a plain `pytest` run doesn't require pytest-cov
 # -s keeps print() output visible, helpful when debugging experiments locally
-addopts = "-v -s"
+# --tb=short gives more concise tracebacks without losing useful context
+addopts = "-v -s --tb=short"
 
 [tool.mypy]
 python_version = "3.9"
